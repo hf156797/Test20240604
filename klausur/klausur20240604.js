@@ -6,7 +6,9 @@ console.log("Klausur 20240604")
 
 console.log("Aufgabe 1")
 // 1a) Berechnen Sie das Volumen eines Würfels mit Hilfe der Grundrechenoperatoren (+ , - , * , /) , bei dem die Kantenlänge mit der Varablen a festgelegt wird.
-
+let a = 1; 
+console.log(a*a*a);
+// Der Buchstabe a gibt die Kante des Würfels dar und a bestimmt die Länge der Würfel Kante (1).
 
 
 // 1b) - Nur Klausurschreiber
@@ -24,7 +26,8 @@ console.log("Aufgabe 2")
 
 // 2a)
 // Testschreiber deklarieren pi und initialisieren pi mit dem Wert 3.14.
-
+let pi = 3.14;
+// let pi ist jetzt deklariert und gibt in einer Formel 3.14 raus wenn man pi eingibt.
 
 
 // Klausurschreiber deklarieren pi und initialisieren pi mit dem Wert aus der bekannten Bibliothek namens Math. Geben Sie Math.PI an, um den Wert von Pi in einer Variablen speichern zu können.
@@ -34,23 +37,26 @@ console.log("Aufgabe 2")
 
 // 2b)
 // Berechnen Sie Flächeninhalt.
+let Radius = 3;
+let Radius² = 3²;
 
-
+console.log(pi*Radius²);
+// Hier wird der Flächeninhalt mit den let begriffen ausgerechnet.
 
 
 
 // 2c)
 // Berechnen Sie den Umfang
+console.log(2*pi*Radius);
 
-
-
+// Hier wird wieder durch die let Funktion eine Rechnung für den Umfang gerechnet.
 
 
 // 2d)
 // Berechnen Sie den Durchmesser
+console.log(2*Radius);
 
-
-
+// Mit let wird der Durchmesser ausgerechnet.
 
 
 console.log("Aufgabe 3")
@@ -63,21 +69,25 @@ console.log("Aufgabe 3")
 // Zahlungsbetrag = Brutto-Rechnungsbetrag – Skonto
 
 // Der Listenpreis einer Papierlieferung beträgt 16780,00 EUR; Rabatt 5 %, Mehrwertsteuer 19 %, Skonto 1,5 %.
-
+let Rabatt = 5;
+let Mehrwertsteuer = 19;
+let Skonto = 1.5;
+let Listenpreis = 16780;
+let NettoRechnungsbetrag = Listenpreis - Rabatt;
 
 // 3a)
 // Berechnen Sie den Rabatt in einer sprechenden Variablen. Geben Sie einen Anwortsatz auf der Konsole aus.
-
+console.log(Listenpreis*Rabatt/100);
 
 
 // 3b)
 // Berechnen Sie den Netto-Rechnungsbetrag in einer sprechenden Variablen. Geben Sie einen Anwortsatz auf der Konsole aus.
-
+console.log(Listenpreis-Rabatt);
 
 
 // 3c)
 // Berechnen Sie die MwSt in einer sprechenden Variablen. Geben Sie einen Anwortsatz auf der Konsole aus.
-
+console.log(NettoRechnungsbetrag*Mehrwertsteuer/100);
 
 
 
@@ -108,7 +118,10 @@ console.log("Aufgabe 4")
 
 // 4a)
 // Ein Kunde nimmst bei einer Bank einen Kredit über 5000 € auf. Die Laufzeit beträgt 6 Monate bei einem Zinssatz von 10%. Berechne die Zinszahlungen, die in diesem Zeitraum anfallen. Arbeiten Sie mit Variablen. Antwortsatz!
-
+let Zinssatz = 10;
+let Kapital = 5000;
+let Verzinsungszeit = 180;
+console.log(Kapital*Zinssatz/100*Verzinsungszeit/360);
 
 
 
@@ -132,13 +145,14 @@ console.log("Aufgabe 5")
 // 5a)
 // Erstellen Sie die notwendigen Variablen und weisen Sie beispielhaft Werte zu. 
 // Erstellen Sie zusätzlich eine Variable für den Namen der Person.
-
+let Körpermasse = 68;
+let Körperlänge = 170²;
 
 
 
 // 5b)
 // Führen Sie die Berechnung durch.
-
+console.log=(Körpermasse/Körperlänge);
 
 
 // 5c) 
